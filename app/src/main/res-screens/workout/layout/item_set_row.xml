@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- صف سيت واحد: رقم السيت | المرة الماضية | كيلو | عدات | ✓ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setRowRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="6dp">
+
+    <TextView
+        android:id="@+id/tvSetNumber"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="@color/text_dark"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSetPrevious"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="60kg × 8"
+        android:textColor="@color/text_grey"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/etSetKg"
+        android:layout_width="64dp"
+        android:layout_height="34dp"
+        android:background="@drawable/bg_set_input_empty"
+        android:gravity="center"
+        android:hint="60"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        android:padding="0dp"
+        android:textColor="@color/text_dark"
+        android:textColorHint="#98A2B3"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/etSetReps"
+        android:layout_width="64dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bg_set_input_empty"
+        android:gravity="center"
+        android:hint="8"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="3"
+        android:padding="0dp"
+        android:textColor="@color/text_dark"
+        android:textColorHint="#98A2B3"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/ivSetDone"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="Mark set as done"
+        android:focusable="true"
+        android:padding="7dp"
+        android:src="@drawable/ic_check_circle_outline" />
+</LinearLayout>

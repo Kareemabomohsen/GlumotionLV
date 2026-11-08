@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- صف أكلة انضافت لوجبة (زر 🗑 أو كبسة طويلة = حذف) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/bg_cue_box"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvEntryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Hummus"
+            android:textColor="@color/text_dark"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvEntryMacros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60g • P 5g • C 8g • F 6g"
+            android:textColor="@color/text_grey"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvEntryKcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100 kcal"
+        android:textColor="@color/text_dark"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <!-- زر حذف الأكلة -->
+    <ImageView
+        android:id="@+id/btnEntryDelete"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="6dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Delete food"
+        android:padding="6dp"
+        android:src="@drawable/ic_delete" />
+</LinearLayout>

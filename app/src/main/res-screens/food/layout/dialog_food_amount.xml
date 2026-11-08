@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- نافذة: كم غرام أكلت؟ والقيم بتتحسب مباشرة -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount (grams)"
+        android:textColor="@color/text_grey"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/etFoodGrams"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_edittext"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        android:paddingHorizontal="14dp" />
+
+    <TextView
+        android:id="@+id/tvAmountMacros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_cue_box"
+        android:lineSpacingExtra="3dp"
+        android:padding="12dp"
+        android:text="0 kcal"
+        android:textColor="@color/text_dark"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tvAmountWarning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="High sugar - may raise your glucose"
+        android:textColor="#D63031"
+        android:textSize="12sp"
+        android:visibility="gone" />
+</LinearLayout>

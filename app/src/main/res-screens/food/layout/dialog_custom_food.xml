@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- نافذة: إضافة أكلة جديدة (إذا ما لقاها بالبحث أو البوت ما عرفها)
+     القيم بتنكتب للكمية اللي كتبها (مش لكل 100 غرام) -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food name"
+            android:textColor="@color/text_grey"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/etCustomFoodName"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="e.g. Mom's maqluba"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences"
+            android:maxLength="40"
+            android:paddingHorizontal="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Amount (grams)"
+            android:textColor="@color/text_grey"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/etCustomFoodGrams"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="e.g. 250"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:paddingHorizontal="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Values for this amount:"
+            android:textColor="@color/text_dark"
+            android:textStyle="bold" />
+
+        <!-- سعرات + كربوهيدرات -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etCustomFoodKcal"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext"
+                android:hint="Calories"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:paddingHorizontal="12dp" />
+
+            <EditText
+                android:id="@+id/etCustomFoodCarbs"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext"
+                android:hint="Carbs (g)"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:paddingHorizontal="12dp" />
+        </LinearLayout>
+
+        <!-- بروتين + دهون -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etCustomFoodProtein"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext"
+                android:hint="Protein (g)"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:paddingHorizontal="12dp" />
+
+            <EditText
+                android:id="@+id/etCustomFoodFat"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext"
+                android:hint="Fat (g)"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:paddingHorizontal="12dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etCustomFoodSugar"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Sugar (g) - optional"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:paddingHorizontal="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="The food is saved in your foods - next time just search it."
+            android:textColor="@color/text_grey"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>

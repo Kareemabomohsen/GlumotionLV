@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- رسالة وحدة: البوت على اليسار (أبيض) والمستخدم على اليمين (أخضر)
+     + صورة الوجبة (رسالة المستخدم) + زر رابط يوتيوب (رسالة البوت) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="4dp">
+
+    <TextView
+        android:id="@+id/tvBotMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/bg_chat_bot"
+        android:lineSpacingExtra="3dp"
+        android:padding="12dp"
+        android:text="Hi!"
+        android:textColor="@color/text_dark"
+        android:textIsSelectable="true"
+        android:textSize="14sp" />
+
+    <!-- زر الرابط (مثلاً فيديو يوتيوب) - بيظهر بس إذا الرسالة فيها رابط -->
+    <TextView
+        android:id="@+id/tvBotLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_btn_red"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingHorizontal="14dp"
+        android:paddingVertical="8dp"
+        android:text="▶ Watch on YouTube"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!-- صورة الوجبة اللي بعتها المستخدم -->
+    <ImageView
+        android:id="@+id/ivUserPhoto"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="end"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="Meal photo"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvUserMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/bg_chat_user"
+        android:padding="12dp"
+        android:text="Hello"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+</LinearLayout>

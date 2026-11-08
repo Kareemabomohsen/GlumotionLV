@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F7F4"
+    android:fillViewport="true"
+    tools:context=".start.CreateAccountActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <!-- Logo & App Name -->
+        <LinearLayout
+            android:id="@+id/logoLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_heart_pulse"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/app_name"
+                android:textColor="@color/text_dark"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/create_your_account"
+            android:textColor="@color/text_dark"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/logoLayout" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/descTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/create_account_desc"
+            android:textColor="@color/text_grey"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/titleTv" />
+
+        <!-- نوع الحساب: مريض / مدرب (التسجيل الخاص بالمدربين) -->
+        <TextView
+            android:id="@+id/accountTypeLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Account type"
+            android:textColor="@color/text_dark"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/descTv" />
+
+        <RadioGroup
+            android:id="@+id/rgAccountType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/accountTypeLabel">
+
+            <RadioButton
+                android:id="@+id/rbPatient"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_radio_option"
+                android:checked="true"
+                android:paddingHorizontal="8dp"
+                android:text="🩸 Patient / Trainee"
+                android:textColor="@color/text_dark"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rbCoach"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_radio_option"
+                android:paddingHorizontal="8dp"
+                android:text="👥 Coach"
+                android:textColor="@color/text_dark"
+                android:textSize="13sp" />
+        </RadioGroup>
+
+        <!-- للمدرب بس: اسم النادي / الفريق -->
+        <LinearLayout
+            android:id="@+id/coachExtraLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/rgAccountType">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Gym / team name"
+                android:textColor="@color/text_dark"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/coachGymEt"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="e.g. Jatt Fitness Club"
+                android:importantForAutofill="no"
+                android:inputType="textCapWords"
+                android:paddingHorizontal="16dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Full Name -->
+        <TextView
+            android:id="@+id/fullNameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/full_name_label"
+            android:textColor="@color/text_dark"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/coachExtraLayout" />
+
+        <EditText
+            android:id="@+id/fullNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/hint_full_name"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/text_dark"
+            android:textColorHint="@color/text_grey"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/fullNameLabel"
+            tools:ignore="Autofill" />
+
+        <!-- Email Address -->
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/email_address_label"
+            android:textColor="@color/text_dark"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/fullNameEt" />
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/hint_email_address"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/text_dark"
+            android:textColorHint="@color/text_grey"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/emailLabel"
+            tools:ignore="Autofill" />
+
+        <!-- Phone (the coach can call the trainee with it) -->
+        <TextView
+            android:id="@+id/phoneLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Phone number"
+            android:textColor="@color/text_dark"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/emailEt" />
+
+        <EditText
+            android:id="@+id/phoneEt"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="05X-XXXXXXX"
+            android:inputType="phone"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/text_dark"
+            android:textColorHint="@color/text_grey"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/phoneLabel"
+            tools:ignore="Autofill" />
+
+        <!-- Password -->
+        <TextView
+            android:id="@+id/passwordLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/password"
+            android:textColor="@color/text_dark"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/phoneEt" />
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/hint_password_req"
+            android:inputType="textPassword"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/text_dark"
+            android:textColorHint="@color/text_grey"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/passwordLabel"
+            tools:ignore="Autofill" />
+
+        <!-- Confirm Password -->
+        <TextView
+            android:id="@+id/confirmPasswordLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/confirm_password_label"
+            android:textColor="@color/text_dark"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/passwordEt" />
+
+        <EditText
+            android:id="@+id/confirmPasswordEt"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/hint_confirm_password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/text_dark"
+            android:textColorHint="@color/text_grey"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/confirmPasswordLabel"
+            tools:ignore="Autofill" />
+
+        <!-- Age & Gender side-by-side -->
+        <LinearLayout
+            android:id="@+id/ageGenderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/confirmPasswordEt">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/age_optional_label"
+                    android:textColor="@color/text_dark"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/ageEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_edittext"
+                    android:hint="@string/hint_age"
+                    android:inputType="number"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/text_dark"
+                    android:textColorHint="@color/text_grey"
+                    android:textSize="15sp"
+                    tools:ignore="Autofill,LabelFor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/gender_optional_label"
+                    android:textColor="@color/text_dark"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/genderSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_edittext"
+                    android:paddingHorizontal="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Create Account Button -->
+        <Button
+            android:id="@+id/createAccountBtn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/primary_green"
+            android:fontFamily="sans-serif-black"
+            android:stateListAnimator="@null"
+            android:text="@string/create_account_continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:cornerRadius="16dp"
+            app:layout_constraintTop_toBottomOf="@id/ageGenderLayout" />
+
+        <!-- Footer -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/createAccountBtn">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/already_have_account_question"
+                android:textColor="@color/text_grey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/signInTv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/sign_in_link"
+                android:textColor="@color/primary_green"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

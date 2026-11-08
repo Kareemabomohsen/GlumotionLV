@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Same light theme also when the phone is in dark mode (the design is light only) -->
+    <style name="Base.Theme.GluMotion" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/gym_green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/primary_green</item>
+        <item name="colorAccent">@color/gym_green</item>
+        <item name="android:windowBackground">@color/background_light</item>
+    </style>
+</resources>

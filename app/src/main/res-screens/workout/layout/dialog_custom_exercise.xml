@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- نافذة إنشاء تمرين خاص: الاسم + العضلة -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="8dp">
+
+    <EditText
+        android:id="@+id/etCustomExName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="Exercise name"
+        android:importantForAutofill="no"
+        android:inputType="textCapWords"
+        android:paddingHorizontal="14dp" />
+
+    <Spinner
+        android:id="@+id/spCustomExMuscle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_spinner" />
+</LinearLayout>

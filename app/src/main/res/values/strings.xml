@@ -1,0 +1,249 @@
+<resources>
+    <string name="app_name">GluMotion</string>
+    <string name="health_hub">GluMotion Health Hub</string>
+    <string name="tagline">Your all-in-one health companion</string>
+    <string name="headline">Smarter Health\nManagement for Food,\nFitness &amp; Blood Sugar</string>
+    <string name="description">Track nutrition with precision, log workouts effortlessly, build daily habits, and stay confident in your glucose levels — whether you have diabetes or simply want better awareness.</string>
+    <string name="highlight_text">Daily progress. Real confidence. One app.</string>
+    <string name="get_started">Get Started</string>
+    <string name="already_have_account">I already have an account</string>
+
+    <!-- Login Screen -->
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="login_subtitle">Sign in to access your personalized nutrition and workout plan.</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="hint_email">Enter your email </string>
+    <string name="hint_password">Enter your password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="no_account">Don\'t have an account yet?</string>
+    <string name="create_account">Create Account</string>
+    <string name="setup_today">Start your personalized fitness setup today</string>
+
+    <!-- Create Account Screen -->
+    <string name="create_your_account">Create Your Account</string>
+    <string name="create_account_desc">Your account will be used to build a personalized plan including body goals, calorie targets, macronutrients, training preferences, and health conditions tailored just for you.</string>
+    <string name="full_name_label">Full Name</string>
+    <string name="email_address_label">Email Address</string>
+    <string name="confirm_password_label">Confirm Password</string>
+    <string name="age_optional_label">Age (optional)</string>
+    <string name="gender_optional_label">Gender (optional)</string>
+    <string name="hint_full_name">e.g. Sarah Mitchell</string>
+    <string name="hint_email_address">you@example.com</string>
+    <string name="hint_password_req">At least 8 characters</string>
+    <string name="hint_confirm_password">Re-enter your password</string>
+    <string name="hint_age">28</string>
+    <string name="hint_gender">Select</string>
+    <string name="create_account_continue">Create Account &amp; Continue</string>
+    <string name="already_have_account_question">Already have an account? </string>
+    <string name="sign_in_link">Sign In</string>
+
+    <!-- Set Up Your Profile -->
+    <string name="setup_profile_title">Set Up Your Profile</string>
+    <string name="setup_profile_subtitle">Let\'s personalize your fitness journey. Fill in each section below.</string>
+    <string name="choose_your_goal">Choose Your Goal</string>
+    <string name="goal_description">What are you looking to achieve?</string>
+    <string name="bulking_item">Bulking                      Build muscle mass</string>
+    <string name="cutting_item">Cutting                        Lose body fat</string>
+    <string name="maintaining_item">Maintaining         Keep current weight</string>
+    <string name="bulking_title">Bulking</string>
+    <string name="bulking_desc">Build muscle mass</string>
+    <string name="cutting_title">Cutting</string>
+    <string name="cutting_desc">Lose body fat</string>
+    <string name="maintaining_title">Maintaining</string>
+    <string name="maintaining_desc">Keep current weight</string>
+    <string name="default_height">178</string>
+    <string name="default_weight">82</string>
+    <string name="step_1">1</string>
+    <string name="step_3">3</string>
+    <string name="physical_data">Physical Data</string>
+    <string name="physical_data_desc">We\'ll use this to estimate your daily needs.</string>
+    <string name="height_label">Height</string>
+    <string name="weight_label">Current Weight</string>
+    <string name="back">Back</string>
+    <string name="continue_btn">continue</string>
+    <string name="cm">cm \u2190</string>
+    <string name="kg">kg \u2190</string>
+
+    <!-- Workout Screen -->
+    <string name="workout_routines_title">Workout Routines</string>
+    <string name="workout_routines_subtitle">Discover training plans &amp; exercise guides</string>
+    <string name="tab_routines">Routines</string>
+    <string name="tab_explanation">Explanation</string>
+    <string name="routine_categories">Ready Templates</string>
+    <string name="chest_triceps_title">Chest &amp; Triceps</string>
+    <string name="back_biceps_title">Back &amp; Biceps</string>
+    <string name="legs_abs_title">Legs &amp; Abs</string>
+    <string name="btn_start">Start</string>
+    <string name="chest_ex_desc">6 exercises • 4 sets each</string>
+    <string name="chest_ex_list">Bench press, flyes, dips, pushdowns</string>
+    <string name="back_ex_desc">5 exercises • 3-4 sets each</string>
+    <string name="back_ex_list">Pull-ups, rows, curls, face pulls</string>
+    <string name="legs_ex_desc">7 exercises • 4-5 sets each</string>
+    <string name="legs_ex_list">Squats, lunges, deadlifts, planks</string>
+    <string name="pectorals_triceps">Pectorals, Triceps</string>
+    <string name="lats_biceps">Lats, Biceps</string>
+    <string name="quads_glutes_core">Quads, Glutes, Core</string>
+
+    <!-- Health Activity Strings -->
+    <string name="sleep_status_good">Good sleep quality — well rested!</string>
+    <string name="sleep_status_long">Long sleep duration — fully recharged.</string>
+    <string name="sleep_status_short">Short sleep duration — try to sleep early!</string>
+    <string name="sleep_duration_format">%1$dh %2$02dm</string>
+    <string name="steps_count_format">%,d</string>
+    <string name="steps_percent_format">%d%% complete</string>
+    <string name="water_count_format">%,d ml</string>
+    <string name="water_percent_format">%d%% of daily goal</string>
+
+    <!-- Health Activity Layout Strings -->
+    <string name="daily_wellness">Daily Wellness</string>
+    <string name="pills">pills</string>
+    <string name="steps">Steps</string>
+    <string name="steps_goal_default">Goal: 10,000</string>
+    <string name="steps_zero">0</string>
+    <string name="steps_unit">steps</string>
+    <string name="steps_percent_zero">0% complete</string>
+    <string name="minus_1k">-1K</string>
+    <string name="plus_1k">+1K</string>
+    <string name="plus_5k">+5K</string>
+    <string name="water_intake">Water Intake</string>
+    <string name="water_goal_default">Goal: 2500 ml</string>
+    <string name="water_zero">0 ml</string>
+    <string name="water_percent_zero">0% of daily goal</string>
+    <string name="minus_250ml">-250 ml</string>
+    <string name="plus_250ml">+250 ml</string>
+    <string name="plus_500ml">+500 ml</string>
+    <string name="sleep_logger">Sleep Logger</string>
+    <string name="sleep_time">Sleep Time</string>
+    <string name="wake_time">Wake Time</string>
+    <string name="duration">Duration</string>
+
+    <!-- Content Descriptions -->
+    <string name="cd_menu">Menu</string>
+    <string name="cd_profile">Profile</string>
+
+    <!-- Food Activity Layout Strings -->
+    <string name="daily_intake_progress">Daily Intake Progress</string>
+    <string name="calorie_progress_default">1,420 / 1,800 cal</string>
+    <string name="carbs">Carbs</string>
+    <string name="carbs_progress_default">125/180g</string>
+    <string name="protein">Protein</string>
+    <string name="protein_progress_default">72/90g</string>
+    <string name="fat">Fat</string>
+    <string name="fat_progress_default">48/60g</string>
+    <string name="recent_saved_foods">Recent &amp; Saved Foods</string>
+    <string name="view_all">View All</string>
+    <string name="green_apple">Green\nApple</string>
+    <string name="boiled_eggs">Boiled\nEggs</string>
+    <string name="grilled_salmon">Grilled\nSalmon</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="breakfast_summary">2 items · 310 kcal</string>
+    <string name="lunch">Lunch</string>
+    <string name="lunch_summary">3 items · 520 kcal</string>
+    <string name="dinner">Dinner</string>
+    <string name="dinner_summary">2 items · 480 kcal</string>
+    <string name="snacks_other">Snacks/Other</string>
+    <string name="snacks_summary">1 item · 110 kcal</string>
+    <string name="recommended_recipes">Recommended Recipes</string>
+    <string name="all">All</string>
+    <string name="recipe_oatmeal">High-Protein Fiber Oatmeal</string>
+    <string name="recipe_salad">Grilled Chicken Salad</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Diabetes / Blood Sugar Activity Strings -->
+    <string name="blood_sugar">Blood Sugar</string>
+    <string name="mg_dl">mg/dL</string>
+    <string name="today_jun_12">Today, Jun 12</string>
+    <string name="current_reading">Current Reading</string>
+    <string name="current_reading_time_default">8:00 AM • Fasting</string>
+    <string name="trends_link">Trends \u2192</string>
+    <string name="val_95">95</string>
+    <string name="normal">Normal</string>
+    <string name="trend_last_default">-12 from last</string>
+    <string name="low_range_label">Low &lt;70</string>
+    <string name="target_range_label">Target: 70-140 mg/dL</string>
+    <string name="high_range_label">High &gt;180</string>
+    <string name="val_124">124</string>
+    <string name="todays_avg">Today\'s Avg</string>
+    <string name="percent_60">60%</string>
+    <string name="fraction_3_5">3/5</string>
+    <string name="in_range">In Range</string>
+    <string name="val_5">5</string>
+    <string name="today_lowercase">today</string>
+    <string name="readings">Readings</string>
+    <string name="glucose_trend">Glucose Trend</string>
+    <string name="filter_today">Today</string>
+    <string name="filter_7_days">7 Days</string>
+    <string name="filter_14_days">14 Days</string>
+    <string name="filter_30_days">30 Days</string>
+    <string name="legend_avg">Avg</string>
+    <string name="legend_min">Min</string>
+    <string name="legend_max">Max</string>
+    <string name="legend_target">Target</string>
+    <string name="todays_log">Today\'s Log</string>
+    <string name="add_button">+ Add</string>
+    <string name="fasting">Fasting</string>
+    <string name="time_8_00_am">8:00 AM</string>
+    <string name="val_142">142</string>
+    <string name="after_breakfast">After Breakfast</string>
+    <string name="time_10_30_am">10:30 AM</string>
+    <string name="elevated">Elevated</string>
+    <string name="val_118">118</string>
+    <string name="before_lunch">Before Lunch</string>
+    <string name="time_1_00_pm">1:00 PM</string>
+    <string name="val_156">156</string>
+    <string name="after_lunch">After Lunch</string>
+    <string name="time_3_15_pm">3:15 PM</string>
+    <string name="val_108">108</string>
+    <string name="before_dinner">Before Dinner</string>
+    <string name="time_6_00_pm">6:00 PM</string>
+    <string name="log_blood_sugar_reading">Log Blood Sugar Reading</string>
+    <string name="cd_add_reading">Add reading</string>
+    <string name="cd_prev_date">Previous date</string>
+    <string name="cd_next_date">Next date</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+</resources>

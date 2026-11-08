@@ -1,0 +1,50 @@
+{
+  "rules": {
+    "Users": {
+      "$uid": {
+        ".read": "auth != null && (auth.uid == $uid || root.child('Users').child($uid).child('Coaches').child(auth.uid).exists())",
+        ".write": "auth != null && auth.uid == $uid",
+        "Coaches": {
+          "$coachUid": {
+            ".write": "auth != null && auth.uid == $coachUid && !newData.exists()"
+          }
+        }
+      }
+    },
+    "Coaches": {
+      "$coachUid": {
+        ".read": "auth != null && auth.uid == $coachUid",
+        ".write": "auth != null && auth.uid == $coachUid",
+        "Trainees": {
+          "$traineeUid": {
+            ".write": "auth != null && auth.uid == $traineeUid"
+          }
+        },
+        "Sent": {
+          "$emailKey": {
+            ".write": "auth != null && $emailKey == auth.token.email.toLowerCase().replace('.', '_') && !newData.exists()"
+          }
+        },
+        "Alerts": {
+          "$alertId": {
+            ".write": "auth != null && root.child('Coaches').child($coachUid).child('Trainees').child(auth.uid).exists()"
+          }
+        }
+      }
+    },
+    "CoachRequests": {
+      "$emailKey": {
+        ".read": "auth != null && $emailKey == auth.token.email.toLowerCase().replace('.', '_')",
+        "$coachUid": {
+          ".write": "auth != null && (auth.uid == $coachUid || $emailKey == auth.token.email.toLowerCase().replace('.', '_'))"
+        }
+      }
+    },
+    "Products": {
+      ".read": "auth != null",
+      "$barcode": {
+        ".write": "auth != null && !data.exists()"
+      }
+    }
+  }
+}

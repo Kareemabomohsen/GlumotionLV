@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Diabetes type"
+        android:textColor="@color/text_grey"
+        android:textSize="12sp" />
+
+    <Spinner
+        android:id="@+id/spPrefDiabetes"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_spinner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Monitoring"
+        android:textColor="@color/text_grey"
+        android:textSize="12sp" />
+
+    <Spinner
+        android:id="@+id/spPrefMonitoring"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_spinner" />
+
+    <TextView
+        android:id="@+id/tvPrefDietLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Diet (not shown when the goal is Bulking)"
+        android:textColor="@color/text_grey"
+        android:textSize="12sp" />
+
+    <Spinner
+        android:id="@+id/spPrefDiet"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_spinner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Water target (liters)"
+        android:textColor="@color/text_grey"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/etPrefWater"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="2.5"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:paddingHorizontal="14dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Allergies &amp; restrictions"
+        android:textColor="@color/text_grey"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/cbPrefLactose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lactose allergy" />
+
+    <CheckBox
+        android:id="@+id/cbPrefGluten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gluten allergy" />
+
+    <CheckBox
+        android:id="@+id/cbPrefNut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nut allergy" />
+
+    <CheckBox
+        android:id="@+id/cbPrefHalal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Halal" />
+
+    <CheckBox
+        android:id="@+id/cbPrefVegetarian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vegetarian" />
+
+</LinearLayout>
+</ScrollView>

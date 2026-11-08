@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Chest / Upper Torso Dark Base -->
+    <path
+        android:fillColor="#1D2623"
+        android:pathData="M38,12h24l4,14h-32z" />
+    <!-- Abs / Core Grid (Highlighted Purple) -->
+    <path
+        android:fillColor="#8B5CF6"
+        android:pathData="M40,28h20v24h-20z" />
+    <!-- Abs Muscle Division lines -->
+    <path
+        android:fillColor="#1D2623"
+        android:pathData="M49,28h2v24h-2zM40,35h20v2h-20zM40,43h20v2h-20z" />
+    <!-- Legs / Quads (Highlighted Purple) -->
+    <path
+        android:fillColor="#8B5CF6"
+        android:pathData="M37,54h11l-3,38h-11zM52,54h11l3,38h-11z" />
+    <!-- Outer Hips / Legs Base Shadow -->
+    <path
+        android:fillColor="#1D2623"
+        android:pathData="M34,54h4l-4,38h-2zM62,54h4l2,38h-2z" />
+</vector>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- تفاصيل متدرب (للمدرب فقط - قراءة بس): بروفايل، سكر، أكل اليوم، تمارين، أدوية، صحة -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:paddingBottom="90dp">
+
+            <!-- أزرار اتصال -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCallTrainee"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_gym"
+                    android:text="📞 Call trainee"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCallEmergency"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_red"
+                    android:text="🚑 Emergency contact"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvDetailProfile"
+                style="@style/TraineeCard"
+                android:text="👤 Profile" />
+
+            <TextView
+                android:id="@+id/tvDetailGlucose"
+                style="@style/TraineeCard"
+                android:text="🩸 Blood sugar" />
+
+            <TextView
+                android:id="@+id/tvDetailFood"
+                style="@style/TraineeCard"
+                android:text="🍽 Food today" />
+
+            <TextView
+                android:id="@+id/tvDetailWorkouts"
+                style="@style/TraineeCard"
+                android:text="💪 Workouts" />
+
+            <TextView
+                android:id="@+id/tvDetailMeds"
+                style="@style/TraineeCard"
+                android:text="💊 Medications today" />
+
+            <TextView
+                android:id="@+id/tvDetailHealth"
+                style="@style/TraineeCard"
+                android:text="🚶 Steps, water, sleep" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

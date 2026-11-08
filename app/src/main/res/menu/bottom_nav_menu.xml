@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_health"
+        android:icon="@drawable/ic_heart_pulse"
+        android:title="Health" />
+
+    <item
+        android:id="@+id/nav_food"
+        android:icon="@drawable/ic_food"
+        android:title="Food" />
+
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/ic_dashboard"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/nav_workout"
+        android:icon="@drawable/ic_workout"
+        android:title="Workout" />
+
+    <item
+        android:id="@+id/nav_dm"
+        android:icon="@drawable/ic_dm"
+        android:title="DM" />
+
+</menu>

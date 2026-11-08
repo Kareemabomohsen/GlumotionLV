@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:elevation="4dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <!-- زر المحادثة أو الدردشة (يسار الشريط) -->
+    <ImageView
+        android:id="@+id/btn_top_chat"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_chat"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- اسم التطبيق مع الأيقونة في المنتصف (تأخذ المساحة الفارغة) -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_heart_pulse"
+            android:layout_marginEnd="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GluMotion"
+            android:textColor="@color/text_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- زر البروفايل أو الحساب الشخصي (يمين الشريط) -->
+    <ImageView
+        android:id="@+id/btn_top_profile"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_profile"
+        android:scaleType="centerInside"
+        android:clickable="true"
+        android:focusable="true" />
+
+</LinearLayout>

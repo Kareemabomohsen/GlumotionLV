@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F7F4"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- عنوان رئيسي كبير وواضح في أعلى الشاشة -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile Summary"
+            android:textColor="#1A1A1A"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- بطاقة الملخص الكبيرة والمنسقة لتملأ عرض الهاتف -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- صفوف البيانات بخطوط واضحة ومسافات مرتبة -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+                    <!-- Goal -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingVertical="10dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Goal" android:textColor="#666666" android:textSize="15sp"/>
+                        <TextView android:id="@+id/tvSummaryGoal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bulking" android:textColor="#1A1A1A" android:textStyle="bold" android:textSize="15sp"/>
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F0F0"/>
+
+                    <!-- Fitness Level -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingVertical="10dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Fitness Level" android:textColor="#666666" android:textSize="15sp"/>
+                        <TextView android:id="@+id/tvSummaryFitnessLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Beginner" android:textColor="#1A1A1A" android:textStyle="bold" android:textSize="15sp"/>
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F0F0"/>
+
+                    <!-- Workout Location -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingVertical="10dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Workout Location" android:textColor="#666666" android:textSize="15sp"/>
+                        <TextView android:id="@+id/tvSummaryLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gym" android:textColor="#1A1A1A" android:textStyle="bold" android:textSize="15sp"/>
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F0F0"/>
+
+                    <!-- Height / Weight -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingVertical="10dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Height / Weight" android:textColor="#666666" android:textSize="15sp"/>
+                        <TextView android:id="@+id/tvSummaryHeightWeight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="178 cm / 82 kg" android:textColor="#1A1A1A" android:textStyle="bold" android:textSize="15sp"/>
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F0F0"/>
+
+                    <!-- Daily Calories -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingVertical="10dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Daily Calories" android:textColor="#666666" android:textSize="15sp"/>
+                        <TextView android:id="@+id/tvSummaryCalories" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2,850 kcal" android:textColor="#2E7D32" android:textStyle="bold" android:textSize="16sp"/>
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F0F0"/>
+
+                    <!-- Macros -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingVertical="10dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Macros (P/C/F)" android:textColor="#666666" android:textSize="15sp"/>
+                        <TextView android:id="@+id/tvSummaryMacros" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="178g / 340g / 85g" android:textColor="#1A1A1A" android:textStyle="bold" android:textSize="15sp"/>
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F0F0"/>
+
+                    <!-- Dietary Preference -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingVertical="10dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Dietary Preference" android:textColor="#666666" android:textSize="15sp"/>
+                        <TextView android:id="@+id/tvSummaryDiet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Standard" android:textColor="#1A1A1A" android:textStyle="bold" android:textSize="15sp"/>
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F0F0"/>
+
+                    <!-- Sleep Schedule -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingVertical="10dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Sleep Schedule" android:textColor="#666666" android:textSize="15sp"/>
+                        <TextView android:id="@+id/tvSummarySleep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="23:00 - 07:00" android:textColor="#1A1A1A" android:textStyle="bold" android:textSize="15sp"/>
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F0F0"/>
+
+                    <!-- Water Goal -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingVertical="10dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Water Goal" android:textColor="#666666" android:textSize="15sp"/>
+                        <TextView android:id="@+id/tvSummaryWater" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2.5L/day" android:textColor="#1A1A1A" android:textStyle="bold" android:textSize="15sp"/>
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F0F0"/>
+
+                    <!-- Emergency Contact -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingVertical="10dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Emergency Contact" android:textColor="#666666" android:textSize="15sp"/>
+                        <TextView android:id="@+id/tvSummaryEmergency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Configured" android:textColor="#1A1A1A" android:textStyle="bold" android:textSize="15sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- زر الحفظ والانتقال بشكل كبير وبارز يملأ عرض الشاشة -->
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#2E7D32"
+            android:text="Save Profile &amp; Continue"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="16dp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/white" />
+            <stroke android:width="1dp" android:color="#D1D9D6" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+    <item android:gravity="end|center_vertical" android:right="12dp">
+        <vector
+            android:width="12dp"
+            android:height="12dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <path
+                android:fillColor="@color/text_grey"
+                android:pathData="M7,10l5,5l5,-5z" />
+        </vector>
+    </item>
+</layer-list>

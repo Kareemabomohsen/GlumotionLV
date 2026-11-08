@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme.
+         Light theme on purpose: all the screens are designed with light colors,
+         with DayNight the phone's dark mode made texts white on white. -->
+    <style name="Base.Theme.GluMotion" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/gym_green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/primary_green</item>
+        <item name="colorAccent">@color/gym_green</item>
+        <item name="android:windowBackground">@color/background_light</item>
+    </style>
+
+    <style name="Theme.GluMotion" parent="Base.Theme.GluMotion" />
+
+    <!-- بطاقة نص بصفحة تفاصيل المتدرب (نفس الشكل لكل الأقسام) -->
+    <style name="TraineeCard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:background">@drawable/bg_card</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

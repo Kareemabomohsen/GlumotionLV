@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🔒 ليش GluMotion بيطلب أذونات Health Connect (Android بيفتح هاي الصفحة من شاشة الأذونات) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <TextView
+        android:id="@+id/tvHealthPrivacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_card"
+        android:lineSpacingExtra="4dp"
+        android:padding="16dp"
+        android:text="🔒 GluMotion reads from Health Connect only:\n🚶 Steps - shown in Home and Health, and saved in your account so you (and a coach you accepted) can follow your activity.\n❤ Heart rate - shown at the top of Home.\n\nGluMotion never writes, changes or deletes your health data, and never shares it with anyone except a coach you accepted. You can turn the permissions off any time in Health Connect."
+        android:textColor="@color/text_dark"
+        android:textSize="14sp" />
+</LinearLayout>

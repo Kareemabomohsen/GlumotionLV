@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "681436991241",
+    "project_id": "glumotion-d07da",
+    "storage_bucket": "glumotion-d07da.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681436991241:android:118d0628e23e2ae7cb8dd8",
+        "android_client_info": {
+          "package_name": "com.example.glumotion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNtDd98I5gWdGp4AL3PhLoFfb66OwtFyU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_green">#58B25C</color>
+    <color name="background_light">#F2F6F3</color>
+    <color name="text_dark">#1D2623</color>
+    <color name="text_grey">#6B7671</color>
+    <color name="link_blue">#4A51A3</color>
+    <color name="purple_accent">#5F45D2</color>
+    <color name="orange_accent">#E67E22</color>
+    <color name="red_accent">#D63031</color>
+    <color name="green_accent">#2ECC71</color>
+    <color name="blue_accent">#3B82F6</color>
+    <color name="progress_track">#E5E7EB</color>
+    <color name="med_done_bg">#E8F8F0</color>
+    <color name="med_due_bg">#FFEBEB</color>
+    <!-- Gym section -->
+    <color name="gym_green">#4A8B5E</color>
+    <color name="gym_green_light">#E6F2E9</color>
+    <color name="gym_purple">#4F46E5</color>
+    <color name="gym_border">#E4E7EC</color>
+    <color name="gym_input_bg">#F2F4F7</color>
+</resources>
